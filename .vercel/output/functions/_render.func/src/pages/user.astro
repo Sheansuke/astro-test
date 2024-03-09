@@ -1,0 +1,13 @@
+---
+export const prerender = false
+
+import RootLayout from "../layouts/RootLayout.astro";
+import UserList from "@components/UserList.astro";
+---
+
+<RootLayout title="Users">
+  <div class="p-2">
+    <h1 class="text-4xl">User List</h1>
+    <UserList />
+  </div>
+</RootLayout>
